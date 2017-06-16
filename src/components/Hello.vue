@@ -10,7 +10,7 @@ export default {
   name: 'hello',
   data() {
     return {
-      msg: 'Hello World',
+      msg: 'Hello, lauren',
       todos: Array.from({ length: 40 }).map((e, i) => i),
     };
   },
