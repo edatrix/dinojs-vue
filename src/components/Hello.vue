@@ -1,23 +1,22 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <h2>{{ h2 }}</h2>
     <p v-for="todo in todos">{{todo}}</p>
+    <p v="intro">{{intro}}</p>
   </div>
 </template>
 
 <script>
 export default {
   name: 'hello',
-  props: {
-    todos: {
-      type: Array,
-      require: true,
-    },
-  },
   data() {
     return {
       msg: 'what up, lauren?',
+      h2: 'here is a h2',
       // todos: Array.from({ length: 40 }).map((e, i) => i),
+      todos: ['hi', 'bye', 'see ya'],
+      intro: 'this is the intro paragraph',
     };
   },
 };

@@ -12,10 +12,6 @@ export default {
   components: {
     Hello,
   },
-  props: {
-    todos: [1, 2],
-
-  },
 };
 </script>
 
