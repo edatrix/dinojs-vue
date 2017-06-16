@@ -8,10 +8,16 @@
 <script>
 export default {
   name: 'hello',
+  props: {
+    todos: {
+      type: Array,
+      require: true,
+    },
+  },
   data() {
     return {
-      msg: 'Hello, lauren',
-      todos: Array.from({ length: 40 }).map((e, i) => i),
+      msg: 'what up, lauren?',
+      // todos: Array.from({ length: 40 }).map((e, i) => i),
     };
   },
 };
